@@ -114,7 +114,7 @@ function draw() {
     if(yellowCG.isTouching(mainCyclist)){
       gameState = END;
       player2.velocityY = 0;
-      player2.changeAnimation("opponentPlayer2",oppYellow2Img);
+      player2.addAnimation("opponentPlayer2",oppYellow2Img);
     }
     
     if(redCG.isTouching(mainCyclist)){
