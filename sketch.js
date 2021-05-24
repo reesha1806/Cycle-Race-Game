@@ -108,19 +108,20 @@ function draw() {
    if(pinkCG.isTouching(mainCyclist)){
      gameState = END;
      player1.velocityY = 0;
-     player1.addAnimation("opponentPlayer1",oppPink2Img);
+     player1.changeAnimation("opponentPlayer1",oppPink2Img);
+     
     }
     
     if(yellowCG.isTouching(mainCyclist)){
       gameState = END;
       player2.velocityY = 0;
-      player2.addAnimation("opponentPlayer2",oppYellow2Img);
+      player2.changeAnimation("opponentPlayer2",oppYellow2Img);
     }
     
     if(redCG.isTouching(mainCyclist)){
       gameState = END;
       player3.velocityY = 0;
-      player3.addAnimation("opponentPlayer3",oppRed2Img);
+      player3.changeAnimation("opponentPlayer3",oppRed2Img);
     }
     
 }else if (gameState === END) {
